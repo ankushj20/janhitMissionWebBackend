@@ -8,7 +8,7 @@ const newsRoutes = require("./routes/newsRoutes");
 
 // Initialize App
 const app = express();
-app.use(cors());
+app.use(cors({ credentials: true, origin: true }));
 app.use(express.json());
 
 // Connect Database
